@@ -1,0 +1,32 @@
+.icon-info{
+	position: absolute;
+	right:120px;
+	top: 18px;
+	font-size: 25px;
+}
+
+.icon-user{
+	float: right;
+	right: 40px;
+	font-size:25px; 
+	top: 17px;
+	position: absolute;
+}
+
+.navbar-default .container-fluid{
+	height: 60px;
+}
+.navbar-brand{
+	height: auto;
+	padding:0;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	margin-left: 0;
+}
+
+.kmc-logo{
+	margin-top: 12px;
+}
+.navbar-nav{
+	margin: 7px;
+}
