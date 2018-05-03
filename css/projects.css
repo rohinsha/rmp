@@ -217,7 +217,7 @@ input.search::placeholder{
   line-height: normal;
   letter-spacing: normal;
   color: rgba(38,38,38,0.5);
-  padding-left: 10px;
+  padding-left: 0;
   margin-top:10px;
 }
 
@@ -233,6 +233,9 @@ input.search::placeholder{
   opacity: 0;
   top: 0px;
   border-radius: 5PX;
+  color:rgba(38,38,38,0.7);
+
+
 }
 
 .search.expanded {
@@ -324,11 +327,11 @@ input.search::placeholder{
 
 @media screen and (min-device-width: 1200px) { 
   .search-bar,.search{
-    width: 400px;
+    width: 215px;
   }
 
   .search.expanded{
-    max-width:400px
+    max-width:215px
   }
 }
 

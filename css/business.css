@@ -3,18 +3,6 @@
 
 }
 
-.business-card .list-item{
-  border: 1px solid red;
-}
-
- 
-.business-card .list-item .equip-name,
-.business-card .list-item .date,
-.business-card .list-item .location,
-.business-card .list-item .duration{
-  border:1px solid black;
-  
-}
 
 .business-card .list-item .location,
 .business-card .list-item .duration,
@@ -27,10 +15,15 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #262626;
   padding: 4px 0 3px;
 
+}
+
+.business-card .list-item{
+  min-height: 69px !important;
+  padding:  24px 32px 23px 31px !important;
 }
 
 .business-card  .list-item .equip-name{
@@ -72,4 +65,37 @@
 
 .heading-tabs .approve-bids{
   display: inline-block;
+}
+
+
+@media screen and (max-device-width: 991px) { 
+  .business-card .list-item .location,
+  .business-card .list-item .duration,
+  .business-card .list-item .date{
+    text-align:   left;
+    padding-left:   15px;
+
+  } 
+    .business-card .list-item .location{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
+  .business-card .list-item .location,
+  .business-card .list-item .duration,
+  .business-card .list-item .date{
+    padding-left:   15px;
+    margin-top:   10px;
+  }
+  .business-card .list-item .location{
+    text-align:left;
+  }
+  .business-card .list-item .duration{
+    text-align:center;
+  }
+  .business-card .list-item .date{
+    text-align:   right;
+  } 
 }
