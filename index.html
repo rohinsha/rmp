@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="icomoon/style.css">
+	<title>Rental Management Platform</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="icomoon/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/custom-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/common-styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  	<div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#"><img src="images/kmc-logo.png" class="kmc-logo"></a>
+		      <a class="" href="#"><span>KM</span></a>
 		    </div>
 		    <ul class="nav navbar-nav">
-		      <li><a href="#">KMC</a></li>
+		      <li class=""><a href="#">KMC</a></li>
 		    </ul>
 		    <span class="icon-info"></span>
 		    <span class="icon-user"></span>
@@ -22,62 +28,54 @@
   
 	<div class="container-fluid main-block">
 		<div class="row">
-			<div class="col-xs-4 col-sm-3 col-lg-2 sidebar">
+			<div class="sidebar">
 				<ul class="left-menu">	
-					<li><a class="" href="#"><img src="images/briefcase.png"><span>Projects</span></a></li>
-					<li><a class="" href="#"><img src="images/money-bag.png"><span>Buisness</span></a></li>
-					<li><a class="" href="#"><img src="images/settings.png"><span>Analysis</span></a></li>
-					<li><a class="" href="#"><img src="images/dozer.png"><span>Analysis</span></a></li>
-					<li><a class="" href="#"><img src="images/manpower.png"><span>Man power</span></a></li>
-					<li><a class="" href="#"><img src="images/placeholder.png"><span>Asset mapping</span></a></li>
-					<li><a class="" href="#"><img src="images/hierarchy.png"><span>Your Team</span></a></li>
+					<li><a class="" href="projects.html"><img src="images/briefcase.svg" class="briefcase"><span>Projects</span></a></li>
+					<li><a class="" href="business.html"><img src="images/money-bag.svg" class="money-bag"><span>Business</span></a></li>
+					<li><a class="" href="#"><img src="images/settings.svg" class="settings"><span>Analysis</span></a></li>
+					<li><a class="" href="equipments.html"><img src="images/dozer.svg" class="dozer"><span>Equipment</span></a></li>
+					<li><a class="" href="#"><img src="images/manpower.svg" class="manpower"><span>Man power</span></a></li>
+					<li><a class="" href="#"><img src="images/placeholder.svg" class="placeholder"><span>Asset mapping</span></a></li>
+					<li><a class="" href="#"><img src="images/hierarchical-structure.svg" class="hierarchical-structure"><span>Your Team</span></a></li>
 					
 				</ul>
 			</div>
-			<div class="col-xs-8 col-sm-9 col-lg-10 wrapper">
-				<h2>Dashboard</h2>
+			<div class="wrapper">
+				<h2 class="heading">Dashboard</h2>
 				<div class="container-fluid inner-wrapper">
 					<div class="row">
-						<div class="col-xs-12 col-lg-7 graphs-left">
+						<div class="col-xs-12 col-lg-6 graphs-left">
 							<div class="quick-access">
 								<h3>Quick Access</h3>
 								<div class="proj-category">
 									<img src="images/tick-2.png" class="tick-1" alt="">
-									<span class="equip-name-1">
-										<select>
+										<select class="eq-dd">
 											<option value="">Backhoe Loader</option>
 											<option value="">Excavator</option>
 											<option value="">Piling Rig</option>
 											<option value="">Crane</option>
 										</select>
-									</span>
+										<i class="fa fa-chevron-down down-arrow-1"></i>
 									<div class="links-block">
 										<span class="go-to">Go to</span>
 										<span class="in-label">in</span>
 										<img src="images/right-arrow.png"  class="right-arrow" alt="">
 									</div>	
 									<img src="images/tick-2.png" class="tick-2" alt="">
-									<span class="equip-name-2">
-										<select>
+										<select class="pj-dd">
 											<option value="">Backhoe Loader</option>
 											<option value="">Excavator</option>
 											<option value="">Piling Rig</option>
 											<option value="">Crane</option>
 										</select>
-									</span>
+										<i class="fa fa-chevron-down down-arrow-2"></i>
 								</div>
 							</div>
-							<div class="financial-analysis">
-								<h3>Financial Analysis</h3>
-								<div class="graph-block">
-									
-								</div>
-							</div>
-							<div class="block-timeline">
+							<!-- <div class="block-timeline">
 								
-							</div>
+							</div> -->
 						</div>
-						<div class="col-xs-12 col-lg-5 graphs-right">
+						<div class="col-xs-12 col-lg-6 graphs-right">
 							<div class="task-header">
 								<h3>Tasks</h3>
 									<ul class="nav nav-tabs custom-tabs">
@@ -95,11 +93,13 @@
 										<span><img src="images/tick-2.png" alt=""></span>
 										<span><img src="images/tick-2.png" alt=""></span>
 									</div>
+						    </div>
+							<div class="tasks-block">
 									<div class="tab-content ">
 									  	<div class="tab-pane active" id="1">
-									  		<div class="pending-block">
+									  		<div class="pending-block type-ri">
 									  			<div class="pending-type">
-									  				<span class="type-name">
+									  				<span class="raise-invoice">
 									  					Raise Invoice
 									  				</span>
 									  				<span class="date">
@@ -107,170 +107,294 @@
 									  				</span>
 									  			</div>
 									  			<div class="proj-name">
-									  				Project
+									  				<p>Project</p>
 									  				<h4>Shapoorji UGD Project Guntur</h4>
 									  			</div>
 									  			<div class="time-period">
 									  				<p>Period</p>
-									  				<label>03 Feb 2018</label>-
-									  				 &nbsp;&nbsp;<label>06 April 2019</label>
+									  				<label class="dash">03 Feb 2018</label><label>06 April 2019</label>
 									  			</div>
-									  			<div class="outer-circle">	
-										  			<div class="invoice">
-										  				<span>
-										  					<img src="images/invoice.png" alt="">
-										  				</span>
-										  				<p>Raise Invoice</p>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  				<div class="task-type invoice">
+										  					<span>
+										  						<img src="images/invoice.png" alt="">
+										  					</span>
+										  					<p>Raise Invoice</p>
+										  				</div>
 										  			</div>
 										  		</div>
 										  	</div>
-										  	<div class="pending-block">
+										  	<div class="pending-block type-ps">
 									  			<div class="pending-type">
-									  				<span class="type-name">
-									  					Raise Invoice
+									  				<span class="payment-status">
+									  					Payment Status
 									  				</span>
 									  				<span class="date">
 									  					09 May '18
 									  				</span>
 									  			</div>
 									  			<div class="proj-name">
-									  				Project
+									  				<p>Project</p>
 									  				<h4>Shapoorji UGD Project Guntur</h4>
 									  			</div>
 									  			<div class="time-period">
-									  				<p>Period</p>
-									  				<label>03 Feb 2018</label>-
-									  				 &nbsp;&nbsp;<label>06 April 2019</label>
+									  				<p>Invoice</p>
+									  				<label>03 Feb 2018</label><label>06 April 2019</label>
 									  			</div>
-									  			<div class="outer-circle">	
-										  			<div class="invoice">
-										  				<span>
-										  					<img src="images/invoice.png" alt="">
-										  				</span>
-										  				<p>Raise Invoice</p>
-										  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  				
+											  			<div class="task-type update-status">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Update Status</p>
+											  			</div>
+											  		</div>
 										  		</div>
 										  	</div>
-									  		<div class="pending-block">
+									  		<div class="pending-block type-nb">
 									  			<div class="pending-type">
-									  				<span class="type-name">
-									  					Raise Invoice
+									  				<span class="new-bid">
+									  					Bid > New
 									  				</span>
 									  				<span class="date">
 									  					09 May '18
 									  				</span>
 									  			</div>
 									  			<div class="proj-name">
-									  				Project
-									  				<h4>Shapoorji UGD Project Guntur</h4>
+									  				<p>Lead</p>
+									  				<h4>Backhoe Loader</h4>
 									  			</div>
 									  			<div class="time-period">
-									  				<p>Period</p>
-									  				<label>03 Feb 2018</label>-
-									  				 &nbsp;&nbsp;<label>06 April 2019</label>
+									  			<p class="location"> <img src="images/placeholder.png">South Kimberly</p>
+									  				<label class="dash">03 Feb 2018</label><label>06 April 2019</label>
 									  			</div>
-									  			<div class="outer-circle">	
-										  			<div class="invoice">
-										  				<span>
-										  					<img src="images/invoice.png" alt="">
-										  				</span>
-										  				<p>Raise Invoice</p>
-										  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  			
+											  			<div class="task-type bid">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Bid</p>
+											  			</div>
+											  		</div>
 										  		</div>
 										  	</div>
-									  		<div class="pending-block">
+									  		<div class="pending-block type-ab">
 									  			<div class="pending-type">
-									  				<span class="type-name">
-									  					Raise Invoice
+									  				<span class="approved-bid">
+									  					Bid > Approved
 									  				</span>
 									  				<span class="date">
 									  					09 May '18
 									  				</span>
 									  			</div>
 									  			<div class="proj-name">
-									  				Project
-									  				<h4>Shapoorji UGD Project Guntur</h4>
+									  				<p>Lead</p>
+									  				<h4>Backhoe Loader</h4>
 									  			</div>
 									  			<div class="time-period">
-									  				<p>Period</p>
-									  				<label>03 Feb 2018</label>-
-									  				 &nbsp;&nbsp;<label>06 April 2019</label>
+									  				<p class="location"> <img src="images/placeholder.png">South Kimberly</p>
+									  			
+													<label class="dash">03 Feb 2018</label><label>06 April 2019</label>
 									  			</div>
 									  			<div class="outer-circle">	
-										  			<div class="invoice">
-										  				<span>
-										  					<img src="images/invoice.png" alt="">
-										  				</span>
-										  				<p>Raise Invoice</p>
-										  			</div>
+									  				<div class="inner-circle">	
+										  			
+											  			<div class="task-type send-bid-details">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Send Details</p>
+											  			</div>
+											  		</div>
 										  		</div>
 										  	</div>
-									  		<div class="pending-block">
+									  		<div class="pending-block type-bc">
 									  			<div class="pending-type">
-									  				<span class="type-name">
-									  					Raise Invoice
+									  				<span class="bill-check">
+									  					Bill Check
 									  				</span>
 									  				<span class="date">
 									  					09 May '18
 									  				</span>
 									  			</div>
 									  			<div class="proj-name">
-									  				Project
-									  				<h4>Shapoorji UGD Project Guntur</h4>
+									  				<p>Bill</p>
+									  				<h4>Backhoe Loader</h4>
 									  			</div>
 									  			<div class="time-period">
-									  				<p>Period</p>
-									  				<label>03 Feb 2018</label>-
-									  				 &nbsp;&nbsp;<label>06 April 2019</label>
+									  				<p>Maintenance/Repair</p>
+									  				<label>03 Feb 2018</label><label>Rs 20,000</label>
 									  			</div>
-									  			<div class="outer-circle">	
-										  			<div class="invoice">
-										  				<span>
-										  					<img src="images/invoice.png" alt="">
-										  				</span>
-										  				<p>Raise Invoice</p>
-										  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  				
+											  			<div class="task-type check-details">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Check Details</p>
+											  			</div>
+											  		</div>
 										  		</div>
 										  	</div>
-				
-									  		<div class="pending-block">
-									  				<div class="pending-type">
-									  				<span class="type-name">
-									  					Raise Invoice
+											<div class="pending-block type-ps">
+									  			<div class="pending-type">
+									  				<span class="payment-status">
+									  					Payment Status
 									  				</span>
 									  				<span class="date">
 									  					09 May '18
 									  				</span>
 									  			</div>
 									  			<div class="proj-name">
-									  				Project
+									  				<p>Project</p>
 									  				<h4>Shapoorji UGD Project Guntur</h4>
 									  			</div>
 									  			<div class="time-period">
-									  				<p>Period</p>
-									  				<label>03 Feb 2018</label>-
-									  				 &nbsp;&nbsp;<label>06 April 2019</label>
+									  				<p>Invoice</p>
+									  				<label>03 Feb 2018</label><label>06 April 2019</label>
 									  			</div>
-									  			<div class="outer-circle">	
-										  			<div class="invoice">
-										  				<span>
-										  					<img src="images/invoice.png" alt="">
-										  				</span>
-										  				<p>Raise Invoice</p>
-										  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  				
+											  			<div class="task-type update-status">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Update Status</p>
+											  			</div>
+											  		</div>
 										  		</div>
-										  	
-									  		</div>
+										  	</div>
 										</div>
 										<div class="tab-pane" id="2">
-								  			
+								  			<div class="pending-block type-bc">
+									  			<div class="pending-type">
+									  				<span class="bill-check">
+									  					Bill Check
+									  				</span>
+									  				<span class="date">
+									  					09 May '18
+									  				</span>
+									  			</div>
+									  			<div class="proj-name">
+									  				<p>Bill</p>
+									  				<h4>Backhoe Loader</h4>
+									  			</div>
+									  			<div class="time-period">
+									  				<p>Maintenance/Repair</p>
+									  				<label>03 Feb 2018</label><label>Rs 20,000</label>
+									  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  				
+											  			<div class="task-type check-details">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Check Details</p>
+											  			</div>
+											  		</div>
+										  		</div>
+										  	</div>
+								  			<div class="pending-block type-ri">
+									  			<div class="pending-type">
+									  				<span class="raise-invoice">
+									  					Raise Invoice
+									  				</span>
+									  				<span class="date">
+									  					09 May '18
+									  				</span>
+									  			</div>
+									  			<div class="proj-name">
+									  				<p>Project</p>
+									  				<h4>Shapoorji UGD Project Guntur</h4>
+									  			</div>
+									  			<div class="time-period">
+									  				<p>Period</p>
+									  				<label class="dash">03 Feb 2018</label><label>06 April 2019</label>
+									  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  				<div class="task-type invoice">
+										  					<span>
+										  						<img src="images/invoice.png" alt="">
+										  					</span>
+										  					<p>Raise Invoice</p>
+										  				</div>
+										  			</div>
+										  		</div>
+										  	</div>
+										  
+									  		<div class="pending-block type-nb">
+									  			<div class="pending-type">
+									  				<span class="new-bid">
+									  					Bid > New
+									  				</span>
+									  				<span class="date">
+									  					09 May '18
+									  				</span>
+									  			</div>
+									  			<div class="proj-name">
+									  				<p>Lead</p>
+									  				<h4>Backhoe Loader</h4>
+									  			</div>
+									  			<div class="time-period">
+									  			<p class="location"> <img src="images/placeholder.png">South Kimberly</p>
+									  				<label class="dash">03 Feb 2018</label><label>06 April 2019</label>
+									  			</div>
+									  			<div class="outer-circle">
+									  				<div class="inner-circle">	
+										  			
+											  			<div class="task-type bid">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Bid</p>
+											  			</div>
+											  		</div>
+										  		</div>
+										  	</div>
+									  		<div class="pending-block type-ab">
+									  			<div class="pending-type">
+									  				<span class="approved-bid">
+									  					Bid > Approved
+									  				</span>
+									  				<span class="date">
+									  					09 May '18
+									  				</span>
+									  			</div>
+									  			<div class="proj-name">
+									  				<p>Lead</p>
+									  				<h4>Backhoe Loader</h4>
+									  			</div>
+									  			<div class="time-period">
+									  				<p class="location"> <img src="images/placeholder.png">South Kimberly</p>
+									  			
+													<label class="dash">03 Feb 2018</label><label>06 April 2019</label>
+									  			</div>
+									  			<div class="outer-circle">	
+									  				<div class="inner-circle">	
+										  			
+											  			<div class="task-type send-bid-details">
+											  				<span>
+											  					<img src="images/invoice.png" alt="">
+											  				</span>
+											  				<p>Send Details</p>
+											  			</div>
+											  		</div>
+										  		</div>
+										  	</div>
+									  		
+											
 										</div>
 									</div>
 
-
-							</div>
-							<div class="tasks-block">
-								
 							</div>
 						</div>
 					</div>

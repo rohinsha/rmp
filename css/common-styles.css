@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+a:focus{
+  outline: none;
+  outline-offset: 0;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+}
+
+.navbar-default .container-fluid {
+  height: 77px;
+}
+.navbar-brand {
+  height: auto;
+  padding:0;
+}
+
+.navbar>.container .navbar-brand, 
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
+}
+
+
+.navbar-nav {
+  padding:9px 0;
+  
+}
+.navbar-default {
+  background-color: white;
+}
+
+
+.navbar-header a span {
+  font-family: 'Heebo', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navbar-header {
+  margin-top: 26px;
+}
+
+.navbar-header a span {
+  width: 36px;
+  height: 36px;
+  background-color: #262626;
+  border-radius: 50%;
+  margin-left: 5px;
+  padding: 4.5px 4px 4px 5.5px
+}
+
+.navbar-header a {
+  text-decoration: none;
+}
+
+.navbar-nav li a {
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #262626 !important;
+  padding: 15px 10px;
+}
+
+.icon-info {
+  position: absolute;
+  right:123px;
+  top: 26px;
+  font-size: 25px;
+}
+
+.icon-user {
+  float: right;
+  right: 38px;
+  font-size:25px; 
+  top: 24px;
+  position: absolute;
+}
+
+.main-block {
+  margin-top: 77px;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: #081b2c;
+  position: fixed;
+  width: 251px;
+}
+
+.wrapper {
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  background-image: linear-gradient(to top, #000000, #164e7d);
+  border-top:1px solid #979797;
+  color:white;
+  margin-left: 251px;
+  position: relative;
+}
+
+.left-menu {
+  list-style-type: none;
+  margin-top: 62px;
+  margin-left: 35px;
+}
+
+.left-menu li {
+  padding: 0 0 31px 0;
+  
+}
+.left-menu li a:focus,
+.left-menu li a:hover {
+  text-decoration:none;
+}
+
+.left-menu li a span {
+  margin-left: 15.7px;
+  color:white;
+  font-size:15px;
+  position: relative;
+  top: 3px;
+}
+
+.briefcase {
+  width: 22px;
+  height: 18px;
+  object-fit: contain;
+}
+.money-bag {
+  width: 22px;
+  height: 24px;
+  object-fit: contain;
+}
+.dozer,.manpower,
+.hierarchical-structure{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.placeholder {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.wrapper h2{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.inner-wrapper{
+  height: auto;
+}

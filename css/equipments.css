@@ -1,0 +1,76 @@
+.equipments{
+   background-image: linear-gradient(to top, #000000, #276875);
+}
+
+.equipment-card .equip-info .equip-name{
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-family: 'Heebo', sans-serif;
+  color: rgba(38,38,38,0.9);
+}
+
+.equipment-card .equip-info{
+  font-family: 'Heebo', sans-serif;
+}
+
+.equipment-card .equip-info .reg-no{
+	font-size: 15px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: rgba(37,37,37,0.7);
+}
+
+.equipment-card .list-item .capacity{
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(38,38,38,0.9);
+  font-family: 'Heebo', sans-serif;
+  padding:22px 0;
+}
+
+.equipment-card .list-item .capacity p{
+  width: 52px;
+  height: 31px;
+  border-radius: 2px;
+  border: solid 1.5px #0e95af;
+  padding: 3px 0;
+  margin:0 auto;
+}
+
+.equipment-card .list-item .location{
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: rgba(38,38,38,0.7);
+  font-family: 'Heebo', sans-serif;
+  padding:25px 0 18px;
+}
+
+.equipment-card .list-item .location p img{
+  margin-right: 10px; 
+}
+
+@media screen and (max-device-width: 1199px) { 
+  .equipment-card	.list-item .location{
+		padding: 0 15px;
+		text-align: left;
+  }
+}

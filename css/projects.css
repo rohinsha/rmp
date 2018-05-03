@@ -1,0 +1,355 @@
+.wrapper .title-block h2{
+  margin:0;
+  padding-left: 30px;
+}
+
+.wrapper button{
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 121px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: none;
+} 
+
+
+.wrapper button span{
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(38, 38, 38,0.9);
+  
+}
+
+.plus-circle {
+  width: 24px;
+  height: 23px;
+  object-fit: contain;
+  opacity: 0.9;
+  position: absolute;
+  left: 12px;
+  top: 6px;
+ 
+}
+
+.list-container .tab-content{
+  width: 90%;
+  margin:0 auto;
+}
+
+button span{
+  margin-left: 25px;
+}
+
+.list-container .tab-content ul{
+  margin:0 auto;
+  padding:0;
+  width: 100%;
+}
+
+.list-container .tab-content .list-item{
+  color: black;
+  margin:0 auto 15px;
+  width: 85.8%;
+  min-height: 110px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  padding:26px 30.5px 26px 16px;
+  overflow-x: auto;
+}
+
+.heading-tabs{
+  margin:35px auto 25px;
+  position: relative;
+  width: 74.8%;
+}
+
+
+.title-block{
+  margin: 51px auto 31px;
+  position: relative;
+  width: 74.8%;
+}
+
+
+
+.list-container{
+  margin-top: 0;
+}
+
+.heading-tabs ul{
+  width: 420px;
+  margin:0;
+  padding: 0;
+}
+
+.heading-tabs ul li {
+  margin-left: 30px;
+}
+.heading-tabs ul li a {
+  color:white;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin:0;
+  padding: 0 0 4px;
+}
+
+.heading-tabs ul .active a{
+  border-radius: 1px;
+  border-bottom: 2px solid white !important;
+}
+
+.heading-tabs ul>li>a:focus, 
+.heading-tabs ul>li>a:hover,
+.heading-tabs ul>li>a{
+  background-color: transparent ;
+  border: none;
+}
+
+.heading-tabs ul>li>a:active,
+.heading-tabs ul>li>a:focus,
+.heading-tabs ul>li>a:visited{
+  border-radius: 1px;
+  border-bottom: 2px solid white !important;
+}
+
+.heading-tabs ul>li.active>a, 
+.heading-tabs ul>li.active>a:focus,
+.heading-tabs ul>li.active>a:hover,
+.heading-tabs ul>li.active>a:visited,
+.heading-tabs ul>li.active>a:active{
+  background-color: inherit;
+  border:none;
+  color:white;
+}
+.nav-tabs{
+  border-bottom: 0;
+}
+
+.project-card .project-name{
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(38,38,38,0.9)
+}
+
+.project-card .no-of-equipments{
+  text-align: center;
+}
+
+.project-card .no-of-equipments .quantity{
+  margin-bottom: 0;
+  position: relative;
+  top: -9px;
+}
+.project-card .rental-info p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgba(38,38,38,0.7);
+}
+
+
+.project-card .rental-info {
+  padding-left: 25px;
+  
+}
+.placeholder-1{
+
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+
+}
+
+.project-card .rental-info p img{
+  margin-right: 10px; 
+}
+.heading-tabs ul,
+.search-bar{
+  display: inline-block;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  position: absolute;
+  right: 30px;
+  top: 3px;
+  cursor: pointer;
+}
+.search-bar {
+  position: absolute;
+  width: 250px;
+  top: -5px;
+  right: 65px;
+  border-radius: 5px;
+}
+
+input.search::placeholder{
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(38,38,38,0.5);
+  padding-left: 10px;
+  margin-top:10px;
+}
+
+.search {
+  outline: none;
+  border:none;
+  width: 250px;
+  max-width: 0;
+  padding: 5px;
+  transition: all .5s ease;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  top: 0px;
+  border-radius: 5PX;
+}
+
+.search.expanded {
+  max-width:250px;
+  opacity:1;
+}
+
+
+.project-card .no-of-equipments p{
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color:rgba(38,38,38,0.7);
+  position: relative;
+  top: -10px;
+}
+
+
+.project-card .no-of-equipments .quantity{
+  color:rgba(38,38,38,0.9);  
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal
+}
+
+.list-container .tab-content ul{
+  list-style-type: none;
+}
+
+
+.briefcase-1{
+  width: 18px;
+  height: 16px;
+  object-fit: contain;
+}
+
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
+  .list-container .tab-content .list-item{
+    width:90%;
+  }
+
+  .heading-tabs,.title-block{
+    width:77%;
+  }
+
+  .project-card .rental-info{
+    padding-left: 10px;
+  }   
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) { 
+ .list-container .tab-content .list-item{
+   width:100%;
+ }
+
+ .heading-tabs,
+ .title-block{
+   width: 86%;
+ }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) { 
+  .search-bar,
+  .search{
+    width: 200px;
+  }
+
+  .search.expanded{
+    max-width:200px
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
+  .search-bar,.search{
+    width: 280px;
+  }
+  .search.expanded{
+    max-width:280px
+  }
+}
+
+@media screen and (min-device-width: 1200px) { 
+  .search-bar,.search{
+    width: 400px;
+  }
+
+  .search.expanded{
+    max-width:400px
+  }
+}
+
+@media screen and (max-device-width: 767px) { 
+  .list-container .tab-content .list-item{
+    width:100%;
+  }
+  .heading-tabs,.title-block{
+    width: 92%;
+  }
+  .list-block{
+    width: 96%;
+  }
+}
+
+@media screen and (max-device-width: 1199px) { 
+ .project-card .project-name{
+    margin-bottom: 20px;
+ }
+
+ .project-card .rental-info{
+    padding-left: 15px;
+ }
+}
