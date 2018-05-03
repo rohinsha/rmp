@@ -85,7 +85,7 @@ button span{
 }
 
 .heading-tabs ul{
-  width: 420px;
+  width: auto;
   margin:0;
   padding: 0;
 }
@@ -186,10 +186,6 @@ button span{
 .project-card .rental-info p img{
   margin-right: 10px; 
 }
-.heading-tabs ul,
-.search-bar{
-  display: inline-block;
-}
 
 .search-icon {
   width: 18px;
@@ -197,13 +193,12 @@ button span{
   object-fit: contain;
   position: absolute;
   right: 30px;
-  top: 3px;
+  top: 6px;
   cursor: pointer;
 }
 .search-bar {
   position: absolute;
-  width: 250px;
-  top: -5px;
+  top: 0;
   right: 65px;
   border-radius: 5px;
 }
@@ -224,7 +219,7 @@ input.search::placeholder{
 .search {
   outline: none;
   border:none;
-  width: 250px;
+  width: 100%;
   max-width: 0;
   padding: 5px;
   transition: all .5s ease;
@@ -239,7 +234,7 @@ input.search::placeholder{
 }
 
 .search.expanded {
-  max-width:250px;
+  max-width:100%;
   opacity:1;
 }
 
@@ -305,36 +300,6 @@ input.search::placeholder{
  }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 991px) { 
-  .search-bar,
-  .search{
-    width: 200px;
-  }
-
-  .search.expanded{
-    max-width:200px
-  }
-}
-
-@media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
-  .search-bar,.search{
-    width: 280px;
-  }
-  .search.expanded{
-    max-width:280px
-  }
-}
-
-@media screen and (min-device-width: 1200px) { 
-  .search-bar,.search{
-    width: 215px;
-  }
-
-  .search.expanded{
-    max-width:215px
-  }
-}
-
 @media screen and (max-device-width: 767px) { 
   .list-container .tab-content .list-item{
     width:100%;
@@ -355,4 +320,9 @@ input.search::placeholder{
  .project-card .rental-info{
     padding-left: 15px;
  }
+}
+
+
+.border{
+  border:1px solid white;
 }
