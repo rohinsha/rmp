@@ -1,0 +1,76 @@
+.manpower{
+	 background-image: linear-gradient(to top, #000000, #123678);
+}
+
+.manpower-card .list-item .person-name{
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(38,38,38,0.9);
+ 
+}
+
+
+.mobile-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.manpower-card  .list-item .location,
+.manpower-card  .list-item .mobile,
+.manpower-card  .list-item .person-status{
+ 
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color:rgb(38,38,38,0.7);
+  padding: 4px 0 3px;
+}
+
+
+.manpower-card .list-item{
+  min-height: 69px !important;
+  padding:24px 10px 23px 16px !important;
+}
+
+.manpower-card .list-item img{
+  margin-right: 10px;
+}
+
+
+.manpower-card  .list-item .person-status p{
+	display: inline-block;
+}
+
+.person-status .green-tick{
+	margin-left: 12px;
+}
+
+
+@media screen and (max-device-width: 1199px) { 
+
+	.manpower-card  .list-item .location,
+	.manpower-card  .list-item .mobile,
+	.manpower-card  .list-item .person-status{
+		padding: 10px 15px 3px;
+	}
+}
+
+@media screen and (max-device-width: 991px) { 
+	.person-status{
+		margin-left: 25px;
+	}
+}
+
+

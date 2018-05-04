@@ -8,7 +8,7 @@
 .business-card .list-item .duration,
 .business-card .list-item .date{
   opacity: 0.7;
-  font-family: Heebo;
+  font-family: 'Heebo', sans-serif;
   font-size: 15px;
   font-weight: bold;
   font-style: normal;
