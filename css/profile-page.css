@@ -9,7 +9,7 @@ body{
 .sub-sidebar{
 	background-image: linear-gradient(to top, #000000, #276875);
 	width:251px;
-	height:auto;
+	height:100vh;
 	overflow-y: scroll;
 	top: 77px;
     position: fixed;
@@ -17,16 +17,30 @@ body{
 }
 
 .custom-sidebar{
-	width:346px;
+	width:251px;
+}
+
+.left-menu{
+width: 95px;
+}
+
+.left-menu span {
+  display: none;
+}
+
+.outer-wrapper{
+  margin-left: 251px;
 }
 
 .wrapper{
-	margin-left:346px;
+	margin-left:95px;
 	background-color:#f0f0f0;
 	background-image: none;
 	color: black;
   height: 100%;
 }
+
+
 
 .repairs header .selected-date span{
   display: block;
@@ -722,10 +736,9 @@ display: block;
     margin-right: 20px;
 }
 
-
-.work-history .table-responsive{
+.repairs{
+  margin-right: 70px;
 }
-
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px) { 
 	.inner-wrapper{
 		margin-left: 21.5px;
@@ -744,9 +757,25 @@ display: block;
 }
 
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1270px) { 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1350px) { 
 
   .repairs{
-    margin-right: 52px;
+    margin-right: 30px;
   }
+
+
+  .bootstrap-datetimepicker-widget.dropdown-menu{
+    display:block;
+    margin:2px 0;
+    padding:4px;
+    width:290px !important;
+    max-width: 100%;
+
 }
+}
+
+#repair-date{
+
+margin: 0 auto;
+}
+
