@@ -15,6 +15,10 @@
  
 }
 
+.left-menu li.active a span{
+  color: #054ed5;
+}
+
 
 .mobile-icon {
   width: 16px;

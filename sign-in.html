@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Equiphunt - Leads Management System</title>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="css/jquery-confirm.min.css">
+		<link rel="stylesheet" href="css/signin.css">
+	</head>
+	<body>
+		<div class="loader" style="display: none">
+      		<div class="loaderBack" id="loader-1" ></div>
+    	</div>
+		<nav class="navbar navbar-default custom-navbar">
+			<div class="container-fluid topbar_container">
+				<div class="navbar-header">
+					<img src="images/equiphunt-logo.png" class="logo navbar-brand">
+				</div>
+				<div class="navbar-text index-title">
+					<p>Rental Management Platform</p>
+				</div>			
+			</div>
+		</nav>
+		<div class="login_container">
+			<div class="form_container">
+				<div class="login">
+					<p class="form_title">Login</p>
+					<p class="login_label">Email/Phone No.</p>
+					<input type="text" class="form-control login_email" placeholder="Enter Email/Phone no.">
+					<p class="login_label">Password</p>
+					<input type="password" class="form-control login_pass" placeholder="Enter Password">
+					<span class="signup-link">Sign Up</span>
+					<p class="forgot_pass"><a>Forgot Password?</a></p>
+					<button type="button" class="btn loginbtn center-block">Login</button>
+				</div>
+				<div class="forget_password">
+					<p class="form_title">Forget Password</p>
+					<p class="login_label">Email</p>
+					<input type="text" class="form-control forget_pass_phone" placeholder="Enter Email address">
+					<p class="sign_in"><a>Login</a></p>
+					<button type="button" class="btn update_password_btn center-block">Submit</button>
+				</div>
+				<div class="signup">
+					<p class="form_title">Sign Up</p>
+					<p class="login_label">Company Name</p>
+					<input type="text" class="form-control signup_fname" placeholder="Enter Company Name">
+					<p class="login_label">Name</p>
+					<input type="text" class="form-control signup_lname" placeholder="Name">
+					<p class="login_label">Email Id</p>
+					<input type="text" class="form-control signup_email" placeholder="Enter Email">
+					<p class="login_label">Phone</p>
+					<input type="text" class="form-control signup_phone" placeholder="Enter Phone Number">
+					<button type="button" class="btn signupbtn center-block">Sign Up</button>
+					<p class="signin-link">Do you have an account already ? <span>Login</span></p>
+				</div>	
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-confirm.min.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+</html>

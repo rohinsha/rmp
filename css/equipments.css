@@ -1,6 +1,9 @@
 .equipments{
    background-image: linear-gradient(to top, #000000, #276875);
 }
+.left-menu li.active a span{
+  color: #0e95af;
+}
 
 .equipment-card .equip-info .equip-name{
   font-size: 20px;

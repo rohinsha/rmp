@@ -2,7 +2,9 @@
   background-image: linear-gradient(to top, #000000, #276875);
 
 }
-
+.left-menu li.active a span{
+  color: #00796b;
+}
 
 .business-card .list-item .location,
 .business-card .list-item .duration,

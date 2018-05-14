@@ -134,33 +134,59 @@ a:focus{
 
 .left-menu {
   list-style-type: none;
-  margin-top: 62px;
-  margin-left: 35px;
+  margin-top: 50.5px;
+  margin-left: 16px;
   height: 100vh;
 
 }
 
+
 .left-menu li {
-  padding: 0 0 31px 0;
+  padding: 0 0 0 19.3px;
   
+  width: 235px;
+  height: 45px;
+  margin-bottom: 9px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
+
+
 .left-menu li a:focus,
 .left-menu li a:hover {
   text-decoration:none;
 }
 
+
+.left-menu li.active a span,
+.left-menu li.active a img{
+color: #0b62ab ;
+
+}
+.left-menu li.active {
+background-color: white;
+color: #0b62ab !important;
+}
+.left-menu li a{
+  padding: 0 0 13px;
+}
 .left-menu li a span {
   margin-left: 15.7px;
   color:white;
   font-size:15px;
   position: relative;
-  top: 3px;
+  top: 5.5px;
+
+
 }
 
-
+.left-menu li img{
+margin-top: 10px;
+ 
+}
 
 .briefcase {
-  width: 22px;
+  width: 24px;
   height: 18px;
   object-fit: contain;
 }
@@ -178,6 +204,12 @@ a:focus{
 .placeholder {
   width: 25px;
   height: 25px;
+  object-fit: contain;
+}
+
+.analysis-icon{
+  width: 21px;
+  
   object-fit: contain;
 }
 .wrapper h2{

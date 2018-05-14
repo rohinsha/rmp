@@ -9,7 +9,7 @@ body{
 .sub-sidebar{
 	background-image: linear-gradient(to top, #000000, #276875);
 	width:251px;
-	height:500px;
+	height:auto;
 	overflow-y: scroll;
 	top: 77px;
     position: fixed;
@@ -28,7 +28,7 @@ body{
   height: 100%;
 }
 
-.repairs-section header .selected-date span{
+.repairs header .selected-date span{
   display: block;
 }
 .inner-wrapper{
@@ -37,11 +37,7 @@ body{
   margin-right: 117px;
 }
 
-.repairs-section{
-  margin-top: 50px;
-  margin-left: 56px;
-  margin-right: 139px;
-}
+
 
 .home-link{
 	padding:19px 0 0 21px;
@@ -166,8 +162,9 @@ body{
   color: rgba(255,255,255);
 }
 
-.border{
-	border:1px solid black;
+.nav-pills{
+  height: 200px;
+  overflow-y: scroll;
 }
 
 .tabs-left {
@@ -336,11 +333,27 @@ header h3{
 }
 
 .block-seperator,
-.expenses-seperator{
+.expenses-seperator,
+.cost-spare-seperator,
+.spare-lubricant-seperator{
   border-top: 1px solid #546e7a;
   opacity: 0.2;
+
 }
 
+
+.spare-lubricant-seperator{
+  margin-top: 14px;
+  margin-bottom:16px;
+}
+
+.cost-spare-seperator{
+  margin-bottom:  16px;
+}
+
+.border{
+  border: 1px solid red;
+}
 
 .pdf-icon-1{
   width: 22px;
@@ -480,12 +493,10 @@ background-color: transparent;
   margin-top: 0;
 }
 
-.repairs-section .inner-block .row>div{
-  padding: 0 19px;
-}
 
-.repairs-section .inner-block{
+.repairs .inner-block{
   margin-top: 30.7px;
+padding: 25px 15px 30px;
 }
 
 .edit-repair-info{
@@ -495,7 +506,18 @@ background-color: transparent;
   background-color: #0e95af;
   float: right;
   margin-top: 6.3px;
-color: white;
+  color: white;
+  padding:4.5px 0 5px; 
+
+
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  
 }
 .selected-date,.edit-repair-info{
   display: inline-block
@@ -506,22 +528,211 @@ color: white;
 }
 .pencil-icon-1{
   width: 11.1px;
- margin-left: 16.6px;
-margin-right: 9.4px;
+  margin-left: 16px;
+  margin-right: 9.4px;
   object-fit: contain;
   height: 11.2px;
 }
+
+.repairs-right-block{
+  border-radius: 2px;
+  background-color: #ffffff;
+  background-color: var(--white);
+  -moz-box-shadow: 0 2px 20px 0 rgba(169, 169, 169, 0.5);
+  box-shadow: 0 2px 20px 0 rgba(169, 169, 169, 0.5);
+  -webkit-box-shadow: 0 2px 20px 0 rgba(169, 169, 169, 0.5); 
+  padding: 20px 20px 34px;
+}
+
+.repairs-right-block .costs span{
+  display: block;
+}
+
+
+.costs span:nth-child(1){
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e95af;
+  margin-bottom:5px;
+}
+
+.costs span:nth-child(2){
+   font-size: 19px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #252525;
+}
+
+
+.spare-part-info .spare-part-no span,
+.spare-part-info .spare-cost span,
+.spare-part-info .spare-quantity span,
+.lubricant-info .lubricant span,
+.lubricant-info .unit span,
+.lubricant-info .quantity span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.spare-part-info .spare-part-no span:nth-child(1),
+.spare-part-info .spare-cost span:nth-child(1),
+.spare-part-info .spare-quantity span:nth-child(1),
+.lubricant-info .lubricant span:nth-child(1),
+.lubricant-info .unit span:nth-child(1),
+.lubricant-info .quantity span:nth-child(1){
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e95af;
+}
+
+.spare-part-info .spare-part-no span:nth-child(2),
+.spare-part-info .spare-cost span:nth-child(2),
+.spare-part-info .spare-quantity span:nth-child(2),
+.spare-part-info .spare-part-no span:nth-child(3),
+.spare-part-info .spare-cost span:nth-child(3),
+.spare-part-info .spare-quantity span:nth-child(3),
+.lubricant-info .lubricant span:nth-child(2),
+.lubricant-info .unit span:nth-child(2),
+.lubricant-info .quantity span:nth-child(2),
+.lubricant-info .lubricant span:nth-child(3),
+.lubricant-info .unit span:nth-child(3),
+.lubricant-info .quantity span:nth-child(3),
+.lubricant-info .lubricant span:nth-child(4),
+.lubricant-info .unit span:nth-child(4),
+.lubricant-info .quantity span:nth-child(4){
+
+ font-size: 17px;
+ font-family: 'Heebo', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #252525;
+}
+
+
+.lubricant-info .lubricant span,
+.lubricant-info .unit span,
+.lubricant-info .quantity span{
+display: block;
+}
+
+.selected-date span{
+  display: block;
+} 
+
+.selected-date span:nth-child(1){
+  font-size: 13px;
+ font-family: 'Heebo', sans-serif;
+ 
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e95af;
+}
+
+.selected-date span:nth-child(2){
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #252525;
+}
+.work-history{
+  background-color:inherit;
   
+  padding: 5px 30px 0 18px;
+
+}
+.work-history thead tr th{
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e95af;
+  border: 1px solid red;
+  padding-left: 10px;
+ }
+.work-history tbody tr{
+  border-radius: 1px;
+  background-color: #ffffff;
+
+}
+.work-history table{
+  border-spacing: 0 5px;
+}
+.work-history tbody tr td{
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #252525;
+  padding:15px 10px;
+  border-right: 1px solid red;
+  height: 55px;
+  border-spacing:0 5rem;
+  box-shadow: 0 2px 8px 0 rgba(169, 169, 169, 0.5);
+ 
+ }
+
+.work-history tbody tr td.cost{
+   
+}
+.work-history tbody tr td.cost i{
+  float: right;
+}
+
+.work-history thead tr th.duration i{
+  margin-left: 10.8px;
+
+}
+.work-history thead tr th.price i{
+  color: rgba(116,166,166,0.4);
+  margin-left: 12.8px;
+}
+
+.equip-work-history {
+    
+    margin-right: 20px;
+}
+
+
+.work-history .table-responsive{
+}
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1199px) { 
 	.inner-wrapper{
 		margin-left: 21.5px;
 		margin-right: 51px;
 	}
 
-  .repairs-section{
-    margin-left: 20.5px;
-    margin-right: 62px;
-  }
+  
 }
 
 @media screen and (max-device-width: 767px) { 
@@ -529,8 +740,13 @@ margin-right: 9.4px;
 		margin-left: 3.25px;
 		margin-right: 18px;
 	}
-  .repairs-section{
-    margin-left: 2.75px;
-    margin-right: 14px;
+  
+}
+
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1270px) { 
+
+  .repairs{
+    margin-right: 52px;
   }
 }
