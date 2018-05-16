@@ -1,0 +1,17 @@
+.download-icon{
+	width: 24px;
+  height: 24px;
+  object-fit: contain;
+  position: absolute;
+  top: 31px;
+  right: 20px;
+}
+
+.equip-images{
+	position: relative;
+}
+
+.equip-documents{
+	position: relative;
+}
+

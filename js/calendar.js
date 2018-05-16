@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('#repair-date').datetimepicker();
+  $("equipment-date").datetimepicker();
 
     $input = $("#repair-date");
     $input.datetimepicker({
