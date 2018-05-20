@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	 font-family: 'Heebo', sans-serif;
+
+}
+.company-profile-block{
+	background-color: #f0f0f0;
+	background-image: none;
+}
+.inner-container{
+	height: 500px;
+}
+
+.inner-wrapper{
+	margin : 50px 226px 0 188px;
+	
+}
+.heading-block{
+	margin: 0 0 17px;
+}
+
+.heading-block h2{
+	margin-top: 0;
+}
+
+.btns-group button{
+ 
+  height: 31px;
+  border-radius: 3px;
+  background-color: #0b62ab;
+  float: right;
+  margin-left: 21px;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.btns-group{
+	height: 55px;
+	padding: 12px 0;
+}
+
+.header h2{
+  opacity: 0.9;
+  font-family: Heebo;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(38, 38, 38,0.9);
+}
+.border{
+	border:1px solid black;
+}
+.top-margin{
+	margin-top: 30px;
+}
+
+.bg{
+	background-color: white;
+	color: black;
+	padding: 0 25px;
+}
+
+.header{
+	padding-left: 9px;
+}
+.settings-white{
+	width: 13px;
+    height: 14px;
+}
+
+pencil-white{
+  width: 11px;
+  height: 11px;
+}
+.btns-group button{
+	padding: 2px 15px 5px;
+}
+.btns-group button img{
+
+	margin-right: 10px;
+}
