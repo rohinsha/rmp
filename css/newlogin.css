@@ -1,0 +1,170 @@
+html,
+body{
+	height:100%; 
+	margin:0;
+	padding:0;
+	font-family: 'Heebo', sans-serif;
+	
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.wrapper{
+	background-image: linear-gradient(to top, #000000, #164e7d);
+  object-fit: contain;
+  padding: 100px 0 70px;
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+
+.inner-block{
+  background-color: inherit;
+  padding: 0;
+	text-align: center;
+}
+.inner-block h1{
+  font-size: 33px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin:0 0 12px;
+  
+}
+
+.inner-block h4{
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 29px;
+  opacity: 0.8;
+  
+}
+
+.login-block,
+.forgot-password-block,
+.signup-block,
+.before-signup-block{
+  width: 420px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 14px 0 31px;
+  border-radius: 5px;
+}
+
+.forgot-password-block{
+	display: none;
+}
+
+.login-block h3,
+.signup-block h3{
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252525;
+}
+
+.custom-form{
+	margin: 0;
+	padding-top: 33px;
+}
+
+.custom-form.form-group label{
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 9px;
+}
+.custom-form .form-group input{
+	width: 357px;
+	margin: 0 auto;
+	height: 59px;
+    border-radius: 3px;
+    border: solid 1px rgba(37, 37, 37, 0.2);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:rgba(37,37,37,0.9);
+    text-align: center;
+    box-shadow: none;
+
+}
+
+
+.custom-form .signin-btn,
+.custom-form .signup-btn{
+	 width: 357px;
+  height: 59px;
+  border-radius: 3px;
+  background-color: #054ed5;
+  border: solid 1px rgba(37, 37, 37, 0.4);
+  font-size: 23px;
+  font-weight:bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 47px;
+}
+
+.custom-form .links{
+	margin-top: 12px;
+	padding: 0 30px;
+}
+
+.custom-form .linkto-forget-password a,
+.custom-form .linkto-signup a,
+.custom-form .linkto-login a,
+.custom-form .signin-link a,
+.custom-form .signup-link a{
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #054ed5;
+}
+.custom-form .linkto-signup{
+	float: left;
+}
+.custom-form .linkto-forget-password,
+.custom-form .linkto-login{
+	float: right;
+}
+
+.custom-form .signin-link,
+.custom-form .signup-link{
+	text-align: center;
+}
+
+.signup-block{
+  display: none;
+}
