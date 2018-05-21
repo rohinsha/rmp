@@ -11,7 +11,7 @@ body{
 .company-profile-block{
   background-color: #f0f0f0;
   background-image: none;
-  height: 100vh;
+  height: auto;
   padding-bottom: 50px;
 }
 
@@ -26,6 +26,11 @@ body{
 
 .heading-block h2{
   margin-top: 0;
+}
+
+.user-personal-details{
+  height: auto;
+  margin-top: 50px;
 }
 
 .btns-group button{
@@ -68,7 +73,7 @@ body{
   margin-top: 10px;
 }
 
-.bg{
+.company-info{
   background-color: white;
   color: black;
   padding: 0 25px 20px;
