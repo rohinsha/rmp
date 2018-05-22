@@ -1,292 +1,179 @@
+html,
 body{
-    font-family:'Ubuntu', sans-serif;
-    position: relative;
-    height: 100%;
-    overflow-x: hidden;
-}
-.login_container{
-   
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 360px;
-    height: auto;
-    background-color: white;
-    margin: auto;
-    border:1px solid white;
-    border-radius: 6px;
-}
-.form_container{
-    padding: 10px 25px;
-}
-.form_container .forgot_pass,.sign_in{
-        margin: 15px 0;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: right;
-}
-.form_container .form_title{
-        text-align: center;
-    font-size: 30px;
-    color: #094b7d;
+    height:100%; 
+    margin:0;
+    padding:0;
+    font-family: 'Heebo', sans-serif;
     
 }
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 
+.wrapper{
+    background-image: linear-gradient(to top, #000000, #164e7d);
+  object-fit: contain;
+  padding: 70px 0;
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
 .forget_password,.signup{
     display: none;
 }
-.form_container input{
-    height: auto;
-    padding: 10px;
-}
-.signup-link{
-    font-size: 16px;
-    color:#337ab7;
-    
-    font-weight: 500;
-    margin-right: 110px;
-}
-
-.signup-link:hover{
-    text-decoration: underline;
-}
-.forgot_pass{
-    display: inline-block;
-    position: relative;
-    right: 0;
-}
-.form_container .login_label{
-        font-size: 18px;
-    margin: 22px 0 5px 0;
-}
-
-.form_container .login .loginbtn,
-.form_container .update_password_btn,
-.form_container .signup .signupbtn,
-.verify-btn{
-    font-size: 18px !important;
-    color: #fff;
-    background: #094;
-    outline: none !important;
-    cursor: pointer;
-    padding: 10px 50px !important;
-    margin-top: 2.5rem;
-}
-.update_password_btn:hover{
-    color:white;
-}
-
-.sign_in{
-    margin-right: 10px;
-}
-
-.formbtn_container{
-    min-height: 8vh;
-    margin-bottom:5vh;
-}
-.formbtn_container button{
-    float: left;
-    border-radius: 0;
-    min-height: 8vh;
-    width: 50%;
-    font-size: 24px;
-    outline: none !important;
-    background: #094b7d;
-    color: #fff;
-    cursor:pointer;
-}
-.formbtn_container button.loginform{
-    border-bottom-left-radius: 6px;
-}
-.formbtn_container button.signupform{
-    border-bottom-right-radius: 6px;
-}
-.formbtn_container button.active{
-    background: #fff;
-    color:#094b7d;
-}
-.form-input-button{
-    color: #fff;
-    background: #147dc2;
-}
-.form-input, .form-input-button, .form-input-Password{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.custom-navbar {
-    border: none;
-    background-color: transparent;
-    margin-bottom: 0;
-}
-
-.topbar_container {
-    padding: 5px 15px;
-    background: #094b7d;
-    color: #fff;
-    height: 80px;
-    position:relative;
-}
-
-.topbar_container .navbar-header .logo {
-    width: 200px;
-    filter: invert(1);
-    cursor: pointer;
-    height: auto;
-    margin-top: -5px;
-}
-
-.topbar_container .navbar-text {
-    max-width: 100%;
-    width: 480px;
-    margin: 0 auto;
-    text-align: center;
-    top: 15px;
-    position: relative;
-    float: none;
-    color: white !important;
-}
-.index-title{
-    float: right !important;
-}
-
-.topbar_container .navbar-text p {
-    font-size: 26px;
-    color: white;
-    margin: 0 auto;
+.inner-block{
+  background-color: inherit;
+  padding: 0;
     text-align: center;
 }
-
-
-.signin-link{
-    margin-top: 20px;
-    text-align: center;
-    display: inline-block;
-}
-.signin-link span{
-    margin-left: 20px;
-    color: #337ab7;
-    font-size: 16px;
-}
-
-@media (max-width: 767px) and (min-width: 321px) {
-    .topbar_container .navbar-header .logo {
-        width: 130px;
-        margin-left: 0;
-    }
-    
-    .custom-navbar{
-        height: 40px;
-        min-height: 0;
-    }
-    .topbar_container{
-        height: 60px;
-    }
-   
+.inner-block h1{
+  font-size: 33px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin:0 0 12px;
   
+}
+
+.inner-block h4{
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 29px;
+  opacity: 0.8;
+  
+}
+
+.login-block,
+.forgot-password-block,
+.signup-block,
+.before-signup-block,
+.verfication-block,
+.setnew-password-block{
+  width: 420px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 14px 0 31px;
+  border-radius: 5px;
+}
+
+.forgot-password-block{
+    display: none;
+}
+
+.login-block h3,
+.signup-block h3,
+.verification h3,
+.setnew-password-block h3{
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252525;
+}
+
+.custom-form{
+    margin: 0;
+    padding-top: 33px;
+}
+
+.custom-form.form-group label{
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 9px;
+}
+.custom-form .form-group input{
+    width: 357px;
+    margin: 0 auto;
+    height: 59px;
+    border-radius: 3px;
+    border: solid 1px rgba(37, 37, 37, 0.2);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:rgba(37,37,37,0.9);
+    text-align: center;
+    box-shadow: none;
 
 }
 
-@media (max-width: 426px) {
-    
-    .topbar_container .navbar-text p{
-        font-size: 12px;
-        margin-top: 0;
 
-    }
-    .topbar_container .navbar-header .logo {
-        width: 110px;
-        position: relative;
-        top: 3px;
-        margin-left: 5px;
-    }
-    .topbar_container .navbar-text{
-        top: -56px;
-        width: 130px;
-    }
-    .topbar_container{
-        height: 60px;
-    }
+.custom-form .signin-btn,
+.custom-form .signup-btn,
+.submit-companyid-btn,
+.verify-btn,
+.setnew-password-btn{
+     width: 357px;
+  height: 59px;
+  border-radius: 3px;
+  background-color: #054ed5;
+  border: solid 1px rgba(37, 37, 37, 0.4);
+  font-size: 23px;
+  font-weight:bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 47px;
 }
 
-.no-border{
-    border:none;
+.custom-form .links{
+    margin-top: 12px;
+    padding: 0 30px;
 }
 
-
-
-.loader{
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.49);
-   
-} 
-.loaderBack{
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    z-index: 100;
-    display: block;
-    top: 45%;
-    left: 45%;
+.custom-form .linkto-forget-password a,
+.custom-form .linkto-signup a,
+.custom-form .linkto-login a,
+.custom-form .signin-link a,
+.custom-form .signup-link a{
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #054ed5;
+}
+.custom-form .linkto-signup{
+    float: left;
+}
+.custom-form .linkto-forget-password,
+.custom-form .linkto-login{
+    float: right;
 }
 
-/* LOADER 1 */
-
-#loader-1:before, #loader-1:after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border: 10px solid transparent;
-  border-top-color: #3498db;
+.custom-form .signin-link,
+.custom-form .signup-link{
+    text-align: center;
 }
 
-#loader-1:before{
-  z-index: 100;
-  animation: spin 1s infinite;
-}
-#loader-1:after{
-  border: 10px solid #ccc;
-}
-
-@keyframes spin{
-  0%{
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100%{
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-background-color: white !important;
-}
-
-
-@media (max-width: 991px) and (min-width:768px) {
-    .topbar_container .navbar-text{
-        top: 20px ;
-        width: 375px;
-    }
-    .topbar_container .navbar-text p{
-        font-size: 20px;
-    }
-
+.signup-block{
+  display: none;
 }
